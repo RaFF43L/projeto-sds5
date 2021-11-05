@@ -22,15 +22,6 @@ public class Seller {
 	@OneToMany(mappedBy = "seller")
 	
 	private List<Sale> sales = new ArrayList<>();
-	public Seller() {
-		
-	}
-	
-	public Seller(long id, String name) {
-		super();
-		this.id = id;
-		this.name = name;
-	}
 	
 	public long getId() {
 		return id;
@@ -48,6 +39,15 @@ public class Seller {
 		this.name = name;
 	}
 
+	public Seller() {
+		
+	}
+
+	public Seller(long id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
 
 	public List<Sale> getSales() {
 		return sales;
